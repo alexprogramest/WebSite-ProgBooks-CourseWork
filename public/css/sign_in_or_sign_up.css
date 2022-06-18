@@ -1,0 +1,767 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+.header{
+	width: 100%;
+	height: 157px;
+	background-color: #CE8D66;
+	min-width: 303px;
+}
+
+nav {
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 56px;
+	display: flex;	
+	align-items: center;
+	justify-content: center;
+}
+
+nav .logo {
+	transition: 0.5s;
+}
+nav .logo:hover {
+	background-color: #C58762;
+	border-radius: 15px;
+}
+
+.nameCompany a{
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+	font-weight: 800;
+	margin-left: 23px;
+	vertical-align: top;
+	margin-top: 3.5px;
+	transition: 0.3s;
+}
+.nameCompany a:hover{
+	color: #3B3B3B;
+}
+
+nav ul.other-pages{
+	margin-left: 28px;
+}
+
+nav ul.other-pages li{
+	list-style: none;
+	display: inline-block;
+	justify-content: space-between;
+	margin-left: 58px;
+}
+
+nav ul.other-pages li a{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	transition: 0.5s;
+}
+
+nav ul.other-pages li::after{
+	content: '';
+	width: 0;
+	height: 2px;
+	background-color: #ECD7D9;
+	margin: auto;
+	display: block;
+	transition: 0.3s;
+}
+
+nav ul.other-pages li:hover::after{
+	width: 100%;
+}
+
+nav ul.other-pages li a:hover{
+	color: #ECD7D9;
+}
+.accountImage {
+	margin-left: 90px;
+	width: 57px;
+}
+.accountBtn{
+	margin-left: 18px;
+	width: 61px;
+	height: 30px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-radius: 20px;
+	border: none;
+	font-family: 'Roboto';
+	background-color: #B9D2B1;
+	cursor: pointer;
+	transition: 0.6s;
+}
+.accountBtn:hover{
+	color: #fff;
+}
+
+.lang-menu{
+	margin-left: 39px;
+	display: flex;	
+	position: relative;
+}
+.list-lang-icon{
+	margin-left: 8px;
+	width: 80%;
+	cursor: pointer;
+}
+
+.lang-menu .list-lang-div {
+	display: none;
+	width: 120px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	margin-top: 5px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	border: 1px solid #f8f8f8;
+}
+ul.other-langs {
+	list-style: none;
+}
+ul.other-langs li:hover{
+	background-color: #f2f2f2;
+}
+ul.other-langs li div.main-content-lang-list{
+	width: 120px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+}
+ul.other-langs li div.main-content-lang-list div.icon-lang-select{
+	padding-top: 5px;
+}
+ul.other-langs li div.main-content-lang-list div.name-lang-select{
+	padding-left: 5px;
+}
+ul.other-langs li div.main-content-lang-list div.name-lang-select a{
+	text-decoration: none;
+	color: black;
+}
+
+.list-icon-and-whole-list:hover .list-lang-div {
+    display: block;
+}
+
+.additional-menu {
+	display: none;
+	position: relative;
+	cursor: pointer;
+	padding-left: 15px;
+}
+.additional-menu img{
+	width: 30px;
+}
+.list-options-menu {
+	position: absolute;
+	margin-top: 0.5px;
+	right: 0;
+}
+.list-options-menu ul.list-options{
+	display: none;
+	width: 110px;
+	background-color: #D9C9ED;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	border: 3px solid #fff;
+	list-style: none;
+}
+.list-options-menu ul.list-options li{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	transition: 0.3s;
+}
+.list-options-menu ul.list-options li a{
+	text-decoration: none;
+	color: black;
+}
+.list-options-menu ul.list-options li:hover{
+	background-color: #EBDCFE;
+	border-radius: 5px;
+}
+.additional-menu:hover .list-options-menu ul.list-options{
+	display: block;
+}
+
+
+
+section.sign_in_or_sign_up-main-section{
+	width: 100%;
+	height: 1075px;
+	background: linear-gradient(rgba(172, 192, 172, 0.8), rgba(172, 192, 172, 0.8)), 
+		url(/images/sign_in_or_sign_up/embossed-diamond.png);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 303px;
+}
+section.sign_in_or_sign_up-main-section .main-content{
+	width: 475px;
+	height: 760px;
+	background: white;
+	border-radius: 66px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section.sign_in_or_sign_up-main-section .title-text {
+	padding-top: 52px;
+	text-align: center;
+	font-weight: 600;
+	font-size: 32px;
+}
+section.sign_in_or_sign_up-main-section .main-form form{
+	width: 349px;
+	padding-top: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section.sign_in_or_sign_up-main-section .main-form form > *{
+	width: 100%;
+	margin-bottom: 32px;
+}
+section.sign_in_or_sign_up-main-section .main-form .name-field{
+	height: 40px;
+	padding-left: 27px;
+	box-sizing: border-box;
+	font-size: 16px;
+	border-radius: 4px;
+	border: 1px solid rgba(106, 106, 106, 1);
+}
+
+section.sign_in_or_sign_up-main-section .main-form .password-field{
+	height: 45px;
+	padding-left: 27px;
+	box-sizing: border-box;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid rgba(106, 106, 106, 1);
+}
+
+
+section.sign_in_or_sign_up-main-section .main-form .name-field::placeholder, 
+section.sign_in_or_sign_up-main-section .main-form .password-field::placeholder{
+	font-size: 16px;
+	color: #BFBEBE;
+}
+
+
+section.sign_in_or_sign_up-main-section .main-form .two-options {
+	height: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section.sign_in_or_sign_up-main-section .main-form .two-options a{
+	text-decoration: none;
+	color: black;
+}
+section.sign_in_or_sign_up-main-section .main-form .two-options .remember-user{
+	width: 180px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section.sign_in_or_sign_up-main-section .main-form .two-options .remember-user label{
+	cursor: pointer;
+}
+section.sign_in_or_sign_up-main-section .main-form .two-options .remember-user #checkbox-answer{
+	appearance: none;
+	-webkit-appearance: none;
+	background: #FFFFFF;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #444444;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s;
+}
+
+section.sign_in_or_sign_up-main-section .main-form .two-options .remember-user #checkbox-answer:after{
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f00c";
+	font-size: 15px;
+	color: white;
+	display: none;
+
+}
+section.sign_in_or_sign_up-main-section .main-form .two-options .remember-user #checkbox-answer:hover{
+	background-color: #F0F0F0;
+}
+section.sign_in_or_sign_up-main-section .main-form .two-options .remember-user #checkbox-answer:checked{
+	background-color: steelblue;
+}
+section.sign_in_or_sign_up-main-section .main-form .two-options .remember-user #checkbox-answer:checked:after{
+	display: block;
+}
+
+
+section.sign_in_or_sign_up-main-section .main-form .main-button{
+	height: 85px;
+	background: #6D6875;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	border: none;
+	font-weight: 600;
+	font-size: 28px;
+	color: white;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+section.sign_in_or_sign_up-main-section .main-form .main-button:hover{
+	color: yellowgreen;
+}
+
+section.sign_in_or_sign_up-main-section .social-networks-sign-in {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section.sign_in_or_sign_up-main-section .social-networks-sign-in .additional-text{
+	width: 360px;
+	height: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+section.sign_in_or_sign_up-main-section .social-networks-sign-in hr{
+	width: 41px;
+	border: 1px solid #202020;
+}
+section.sign_in_or_sign_up-main-section .social-networks-sign-in .additional-text {
+	color: #4B4B4B;
+}
+
+section.sign_in_or_sign_up-main-section .social-networks-sign-in .social-networks-choice ul{
+	padding: 12px 0;
+	list-style: none;
+}
+
+section.sign_in_or_sign_up-main-section .social-networks-sign-in .social-networks-choice ul li{
+	width: 134px;
+	display: flex;
+	align-items: center;
+	margin: 14px 0;
+}
+
+section.sign_in_or_sign_up-main-section .social-networks-sign-in .social-networks-choice img{
+	width: 36px;
+}
+
+section.sign_in_or_sign_up-main-section .social-networks-sign-in .social-networks-choice ul li > a{
+	width: 100%;
+	font-size: 18px;
+	justify-content: center; /*Исключительно для Google!*/
+	text-align: center; /*Для всех остальных*/
+}
+
+section.sign_in_or_sign_up-main-section .social-networks-choice ul li > a{
+	text-decoration: none;
+}
+
+section.sign_in_or_sign_up-main-section .social-networks-choice ul li:nth-child(1) > a{
+	color: #3D6AD6;
+}
+
+section.sign_in_or_sign_up-main-section .social-networks-choice ul li:nth-child(2) > a{
+	display: flex;	
+}
+
+section.sign_in_or_sign_up-main-section .social-networks-choice ul li:nth-child(2) > a div:nth-child(1){
+	color: #F14336;
+}
+section.sign_in_or_sign_up-main-section .social-networks-choice ul li:nth-child(2) > a div:nth-child(2){
+	color: #FBBB00;
+}
+section.sign_in_or_sign_up-main-section .social-networks-choice ul li:nth-child(2) > a div:nth-child(3){
+	color: #28B446;
+}
+section.sign_in_or_sign_up-main-section .social-networks-choice ul li:nth-child(2) > a div:nth-child(4){
+	color: #518EF8;
+}
+
+section.sign_in_or_sign_up-main-section .social-networks-choice ul li:nth-child(3) > a{
+	color: #030104;
+}
+
+section.sign_in_or_sign_up-main-section .block-warning {
+	width: 475px;
+	height: 118px;
+	background: #C4C4C4;
+	border-radius: 65.5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section.sign_in_or_sign_up-main-section .block-warning .text-warning {
+	width: 351px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 18px;
+	color: white;
+}
+
+
+
+
+footer{
+	width: 100%;
+	height: 422px;
+	background-color: #565554;
+	min-width: 303px;	
+}
+.footer-main-content{
+	display: flex;
+	justify-content: center;
+	color: white;
+	width: 1134px;
+	height: 233px;
+	padding-top: 99px;
+	padding-left: 9%;
+	font-weight: 500;
+	font-size: 18px;
+}
+.footer-main-content .additional-options{
+	display: flex;
+}
+.footer-main-content .social-network-info .call-to-action{
+	width: 437px;
+}
+.footer-main-content .social-network-info .social-networks img{
+	padding-left: 40px;
+	padding-top: 5.5px;
+	transition: 0.5s;
+}
+.footer-main-content .social-network-info .social-networks img:hover{
+	transform: translate(0, -12px);
+}
+.call-to-action, .header-options{
+	font-weight: 700;
+	font-size: 25px;
+	padding-bottom: 23.5px;
+}
+
+.footer-main-content .social-network-info > a{
+	display: block;
+	padding-left: 30px;
+	transition: 0.5s;
+}
+.footer-main-content .social-network-info > a:hover{
+	transform: translate(0, 6px);
+}
+
+.footer-main-content .account-options{
+	padding-left: 122px;
+
+}
+.footer-main-content .book-options{
+	padding-left: 150px;
+}
+
+.footer-main-content div.option {
+	width: 216px;
+	padding-top: 8.5px;
+	padding-bottom: 8.5px;
+}
+.footer-main-content div.option a{
+	color: white;
+	text-decoration: none;
+}
+
+.footer-main-content div.option a:hover{
+	text-decoration: underline;
+	text-underline-offset: 17%;
+}
+
+
+@media (max-width: 1300px){
+	footer{
+		height: 722px;
+	}
+	.footer-main-content{
+		width: 100%;
+		height: 583px;
+		padding-left: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer-main-content .social-network-info{
+		width: 500px;
+	}
+	.footer-main-content .account-options{
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+	.footer-main-content .book-options{
+		padding-top: 10px;
+	}
+}
+
+@media (max-width: 1300px){
+	nav ul.other-pages li:first-child{
+		display: none;
+	}
+}
+
+@media (max-width: 1170px){
+	nav ul.other-pages {
+		display: none;
+	}
+	.additional-menu {
+		display: block;
+	}
+}
+
+@media (max-width: 700px){
+	.accountBtn{
+		display: none;
+	}
+	.accountImage {
+		margin-left: 30px;
+	}
+	.lang-menu{
+		margin-left: 19px;
+		display: flex;	
+		position: relative;
+	}
+	.footer-main-content .book-options{
+		padding-left: 20px;
+	}
+	.footer-main-content .social-network-info {
+		width: 460px;
+	}
+	.lang-menu .list-lang-div {
+		left: auto;
+		right: 0;
+	}
+}
+
+@media (max-width: 550px){
+	.header{
+		height: 80px;
+	}
+	nav {
+		padding-top: 28px;
+	}
+	nav .logo {
+		width: 50px;
+	}
+	.nameCompany a{
+		margin-left: 2px;
+		font-size: 17px;
+	}
+	.accountImage {
+		width: 40px;
+		margin-left: 30px;
+	}
+	.lang-menu img{
+		width: 15px;
+	}
+	.lang-menu .list-lang-div {
+		width: 90px;
+		height: 20px;
+		margin-top: 0;
+	}
+	ul.other-langs li div.main-content-lang-list{
+		height: 20px;
+	}
+	ul.other-langs li div.main-content-lang-list div.name-lang-select a{
+		font-size: 12px;
+	}
+	.additional-menu {
+		padding-left: 5px;
+	}
+	.additional-menu img{
+		width: 20px;
+	}
+	.list-options-menu {
+		position: absolute;
+		margin-top: 0.5px;
+		right: 0;
+	}
+	.list-options-menu ul.list-options{
+		width: 80px;
+	}
+	.list-options-menu ul.list-options li a{
+		font-size: 12px;
+	}
+
+
+	section.sign_in_or_sign_up-main-section{
+		height: 528px;
+	}
+	section.sign_in_or_sign_up-main-section .main-content{
+		width: 257px;
+		height: 380px;
+		border-radius: 33px;
+		filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.3));
+	}
+	section.sign_in_or_sign_up-main-section .title-text {
+		padding-top: 26px;
+		font-size: 20px;
+	}
+	section.sign_in_or_sign_up-main-section .main-form form{
+		width: 194px;
+		padding-top: 16px;
+	}
+	section.sign_in_or_sign_up-main-section .main-form form > *{
+		margin-bottom: 16px;
+	}
+	section.sign_in_or_sign_up-main-section .main-form .name-field{
+		height: 20px;
+		padding-left: 14px;
+		font-size: 10px;
+	}
+
+	section.sign_in_or_sign_up-main-section .main-form .password-field{
+		height: 24px;
+		padding-left: 14px;
+		font-size: 10px;
+	}
+
+
+	section.sign_in_or_sign_up-main-section .main-form .name-field::placeholder, 
+	section.sign_in_or_sign_up-main-section .main-form .password-field::placeholder{
+		font-size: 10px;
+		color: #BFBEBE;
+	}
+
+
+	section.sign_in_or_sign_up-main-section .main-form .two-options {
+		height: 10px;
+		font-size: 10px;
+	}
+
+	section.sign_in_or_sign_up-main-section .main-form .two-options .remember-user{
+		width: 105px;
+	}
+
+	section.sign_in_or_sign_up-main-section .main-form .two-options .remember-user #checkbox-answer{
+		width: 10px;
+		height: 10px;
+		border: 1px solid #444444;
+		border-radius: 3px;
+	}
+
+	section.sign_in_or_sign_up-main-section .main-form .two-options .remember-user #checkbox-answer:after{
+		font-size: 10px;
+	}
+
+
+	section.sign_in_or_sign_up-main-section .main-form .main-button{
+		height: 42px;
+		box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+		font-size: 14px;
+	}
+
+	section.sign_in_or_sign_up-main-section .social-networks-sign-in .additional-text{
+		width: 180px;
+		height: 9px;
+		font-size: 9px;
+	}
+
+	section.sign_in_or_sign_up-main-section .social-networks-sign-in hr{
+		width: 12px;
+		border: 0.3px solid #4B4B4B;
+	}
+
+	section.sign_in_or_sign_up-main-section .social-networks-sign-in .social-networks-choice ul{
+		padding: 6px 0;
+		list-style: none;
+	}
+
+	section.sign_in_or_sign_up-main-section .social-networks-sign-in .social-networks-choice ul li{
+		width: 77px;
+		margin: 7px 0;
+	}
+
+	section.sign_in_or_sign_up-main-section .social-networks-sign-in .social-networks-choice img{
+		width: 18px;
+	}
+
+	section.sign_in_or_sign_up-main-section .social-networks-sign-in .social-networks-choice ul li > a{
+		font-size: 12px;
+	}
+
+	section.sign_in_or_sign_up-main-section .block-warning {
+		width: 257px;
+		height: 59px;
+	}
+	section.sign_in_or_sign_up-main-section .block-warning .text-warning {
+		width: 190px;
+		font-size: 12px;
+	}
+
+
+
+	footer{
+		height: 300px;
+	}
+	.footer-main-content{
+		padding-top: 0;
+		font-size: 9px;
+		height: 300px;
+	}
+
+	.footer-main-content .social-network-info {
+		width: 265px;
+	}
+
+	.footer-main-content .social-network-info .call-to-action{
+		width: 265px;
+	}
+
+	.call-to-action, .header-options{
+		font-size: 15px;
+		padding-bottom: 11.5px;
+	}
+	.footer-main-content .social-network-info .social-networks img{
+		width: 30px;
+		padding-left: 27px;
+		padding-top: 2.5px;
+	}
+	.footer-main-content .social-network-info .social-networks img:hover{
+		transform: translate(0, -7px);
+	}
+
+	.footer-main-content .social-network-info > a{
+		padding-left: 33px;
+	}
+	.footer-main-content .social-network-info > a:hover{
+		transform: translate(0, 3px);
+	}
+	.footer-main-content .social-network-info > a img{
+		width: 200px;
+	}
+
+	.footer-main-content .account-options{
+		padding-left: 35px;
+
+	}
+	.footer-main-content .book-options{
+		padding-left: 0;
+	}
+
+	.footer-main-content div.option {
+		width: 118px;
+		padding-top: 4.25px;
+		padding-bottom: 4.25px;
+	}
+}

@@ -1,0 +1,688 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+.header{
+	width: 100%;
+	height: 157px;
+	background-color: #CE8D66;
+/*	background: linear-gradient(rgba(206, 141, 102, 1), rgba(71, 112, 123, 0.8));*/
+	min-width: 303px;
+}
+
+nav {
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 56px;
+	display: flex;	
+	align-items: center;
+	justify-content: center;
+}
+
+nav .logo {
+	transition: 0.5s;
+}
+nav .logo:hover {
+	background-color: #C58762;
+	border-radius: 15px;
+}
+
+.nameCompany a{
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+	font-weight: 800;
+	margin-left: 23px;
+	vertical-align: top;
+	margin-top: 3.5px;
+	transition: 0.3s;
+}
+.nameCompany a:hover{
+	color: #3B3B3B;
+}
+
+nav ul.other-pages{
+	margin-left: 28px;
+}
+
+nav ul.other-pages li{
+	list-style: none;
+	display: inline-block;
+	justify-content: space-between;
+	margin-left: 58px;
+}
+
+nav ul.other-pages li a{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	transition: 0.5s;
+}
+
+nav ul.other-pages li::after{
+	content: '';
+	width: 0;
+	height: 2px;
+	background-color: #ECD7D9;
+	margin: auto;
+	display: block;
+	transition: 0.3s;
+}
+
+nav ul.other-pages li:hover::after{
+	width: 100%;
+}
+
+nav ul.other-pages li a:hover{
+	color: #ECD7D9;
+}
+.accountImage {
+	margin-left: 90px;
+	width: 57px;
+}
+.accountBtn{
+	margin-left: 18px;
+	width: 61px;
+	height: 30px;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+	border-radius: 20px;
+	border: none;
+	font-family: 'Roboto';
+	background-color: #B9D2B1;
+	cursor: pointer;
+	transition: 0.6s;
+}
+.accountBtn:hover{
+	color: #fff;
+}
+
+.lang-menu{
+	margin-left: 39px;
+	display: flex;	
+	position: relative;
+}
+.list-lang-icon{
+	margin-left: 8px;
+	width: 80%;
+	cursor: pointer;
+}
+
+.lang-menu .list-lang-div {
+	display: none;
+	width: 120px;
+	height: 30px;
+	position: absolute;
+	left: 0;
+	margin-top: 5px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	border: 1px solid #f8f8f8;
+}
+ul.other-langs {
+	list-style: none;
+}
+ul.other-langs li:hover{
+	background-color: #f2f2f2;
+}
+ul.other-langs li div.main-content-lang-list{
+	width: 120px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+}
+ul.other-langs li div.main-content-lang-list div.icon-lang-select{
+	padding-top: 5px;
+}
+ul.other-langs li div.main-content-lang-list div.name-lang-select{
+	padding-left: 5px;
+}
+ul.other-langs li div.main-content-lang-list div.name-lang-select a{
+	text-decoration: none;
+	color: black;
+}
+
+.list-icon-and-whole-list:hover .list-lang-div {
+    display: block;
+}
+
+.additional-menu {
+	display: none;
+	position: relative;
+	cursor: pointer;
+	padding-left: 15px;
+}
+.additional-menu img{
+	width: 30px;
+}
+.list-options-menu {
+	position: absolute;
+	margin-top: 0.5px;
+	right: 0;
+}
+.list-options-menu ul.list-options{
+	display: none;
+	width: 110px;
+	background-color: #D9C9ED;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+	border: 3px solid #fff;
+	list-style: none;
+}
+.list-options-menu ul.list-options li{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	transition: 0.3s;
+}
+.list-options-menu ul.list-options li a{
+	text-decoration: none;
+	color: black;
+}
+.list-options-menu ul.list-options li:hover{
+	background-color: #EBDCFE;
+	border-radius: 5px;
+}
+.additional-menu:hover .list-options-menu ul.list-options{
+	display: block;
+}
+
+
+
+section.premium-main-section {
+	width: 100%;
+	height: 1200px;
+	background: linear-gradient(rgba(71, 112, 123, 0.8), rgba(71, 112, 123, 0.8)), 
+		url(/images/sign_in_or_sign_up/embossed-diamond.png);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-width: 303px;
+}
+
+section.premium-main-section .title-text {
+	width: 680px;
+	padding-top: 88px;
+	font-weight: 600;
+	font-size: 32px;
+	text-align: center;
+}
+
+section.premium-main-section .main-content {
+	width: 1187px;
+	padding-top: 73px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+section.premium-main-section .main-content .card{
+	width: 475px;
+	height: 760px;
+	margin: 0 100px;
+	background: #FFFFFF;
+	border-radius: 66px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+section.premium-main-section .main-content .card .title-card-block {
+	width: 475px;
+	height: 118px;
+	border-radius: 66px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 600;
+	font-size: 32px;
+}
+
+section.premium-main-section .main-content .card ul {
+	width: 336px;
+	list-style: none;
+}
+
+section.premium-main-section .main-content .card  ul li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0;
+}
+
+section.premium-main-section .main-content .card ul li div{
+	width: 100%;
+	padding-left: 20px;
+	text-align: left;
+	font-weight: 500;
+	font-size: 23px;
+}
+
+section.premium-main-section .main-content .card ul li img{
+	align-self: flex-start;
+	width: 30px;
+}
+
+section.premium-main-section .main-content .card .price-per-month{
+	font-weight: 500;
+	font-size: 20px;
+}
+
+section.premium-main-section .main-content .card form button.btn-for-buy {
+	width: 348px;
+	height: 85px;
+	margin-top: 10px;
+	background: #6D6875;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	border: none;
+	font-weight: 600;
+	font-size: 28px;
+	color: white;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+section.premium-main-section .main-content .card form button.btn-for-buy:hover{
+	transform: scale(1.05);
+}
+
+section.premium-main-section .main-content .first .title-card-block{
+	background: #F0F0F0;
+}
+
+section.premium-main-section .main-content .first .price-per-month{
+	margin-top: 181px;
+}
+
+section.premium-main-section .main-content .second .title-card-block{
+	background: linear-gradient(rgba(249, 251, 201, 1), rgba(249, 251, 201, 1));
+}
+
+section.premium-main-section .main-content .second .price-per-month{
+	margin-top: 35px;
+}
+
+section.premium-main-section .main-content .second .special-benefits ul li{
+	margin: 30px 0;
+}
+
+section.premium-main-section .main-content .second .special-benefits ul li:last-child{
+	margin-bottom: 0;
+}
+
+section.premium-main-section .additional-info {
+	width: 1187px;
+	margin-top: 28px;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+
+section.premium-main-section .additional-info .text-addition {
+	width: 475px;
+	display: flex;
+	justify-content: center;
+}
+section.premium-main-section .additional-info .text-addition .the-text {
+	width: 411px;
+	font-size: 16px;
+}
+
+
+
+
+
+footer{
+	width: 100%;
+	height: 422px;
+	background-color: #565554;	
+	min-width: 303px;
+}
+.footer-main-content{
+	display: flex;
+	justify-content: center;
+	color: white;
+	width: 1134px;
+	height: 233px;
+	padding-top: 99px;
+	padding-left: 9%;
+	font-weight: 500;
+	font-size: 18px;
+}
+.footer-main-content .additional-options{
+	display: flex;
+}
+.footer-main-content .social-network-info .call-to-action{
+	width: 437px;
+}
+.footer-main-content .social-network-info .social-networks img{
+	padding-left: 40px;
+	padding-top: 5.5px;
+	transition: 0.5s;
+}
+.footer-main-content .social-network-info .social-networks img:hover{
+	transform: translate(0, -12px);
+}
+.call-to-action, .header-options{
+	font-weight: 700;
+	font-size: 25px;
+	padding-bottom: 23.5px;
+}
+
+.footer-main-content .social-network-info > a{
+	display: block;
+	padding-left: 30px;
+	transition: 0.5s;
+}
+.footer-main-content .social-network-info > a:hover{
+	transform: translate(0, 6px);
+}
+
+.footer-main-content .account-options{
+	padding-left: 122px;
+
+}
+.footer-main-content .book-options{
+	padding-left: 150px;
+}
+
+.footer-main-content div.option {
+	width: 216px;
+	padding-top: 8.5px;
+	padding-bottom: 8.5px;
+}
+.footer-main-content div.option a{
+	color: white;
+	text-decoration: none;
+}
+
+.footer-main-content div.option a:hover{
+	text-decoration: underline;
+	text-underline-offset: 17%;
+}
+
+
+@media (max-width: 1300px){
+	footer{
+		height: 722px;
+	}
+	.footer-main-content{
+		width: 100%;
+		height: 583px;
+		padding-left: 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer-main-content .social-network-info{
+		width: 500px;
+	}
+	.footer-main-content .account-options{
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+	.footer-main-content .book-options{
+		padding-top: 10px;
+	}
+}
+
+@media (max-width: 1300px){
+	nav ul.other-pages li:first-child{
+		display: none;
+	}
+}
+
+@media (max-width: 1210px){
+	section.premium-main-section {
+		height: 2000px;
+	}
+	section.premium-main-section .main-content {
+		width: 500px;
+		padding-top: 35px;
+		flex-direction: column;
+		align-items: center;
+	}
+	section.premium-main-section .main-content .card{
+		margin-top: 30px;
+	}
+	section.premium-main-section .additional-info {
+		width: 500px;
+		margin-top: 28px;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 1170px){
+	nav ul.other-pages {
+		display: none;
+	}
+	.additional-menu {
+		display: block;
+	}
+}
+
+@media (max-width: 700px){
+	.accountBtn{
+		display: none;
+	}
+	.accountImage {
+		margin-left: 30px;
+	}
+	.lang-menu{
+		margin-left: 19px;
+		display: flex;	
+		position: relative;
+	}
+	.lang-menu .list-lang-div {
+		left: auto;
+		right: 0;
+	}
+
+	section.premium-main-section .title-text {
+		width: 530px;
+		padding-top: 44px;
+	}
+
+	.footer-main-content .book-options{
+		padding-left: 20px;
+	}
+	.footer-main-content .social-network-info {
+		width: 460px;
+	}
+}
+
+@media (max-width: 550px){
+	.header{
+		height: 80px;
+	}
+	nav {
+		padding-top: 28px;
+	}
+	nav .logo {
+		width: 50px;
+	}
+	.nameCompany a{
+		margin-left: 2px;
+		font-size: 17px;
+	}
+	.accountImage {
+		width: 40px;
+		margin-left: 30px;
+	}
+	.lang-menu img{
+		width: 15px;
+	}
+	.lang-menu .list-lang-div {
+		width: 90px;
+		height: 20px;
+		margin-top: 0;
+	}
+	ul.other-langs li div.main-content-lang-list{
+		height: 20px;
+	}
+	ul.other-langs li div.main-content-lang-list div.name-lang-select a{
+		font-size: 12px;
+	}
+	.additional-menu {
+		padding-left: 5px;
+	}
+	.additional-menu img{
+		width: 20px;
+	}
+	.list-options-menu {
+		position: absolute;
+		margin-top: 0.5px;
+		right: 0;
+	}
+	.list-options-menu ul.list-options{
+		width: 80px;
+	}
+	.list-options-menu ul.list-options li a{
+		font-size: 12px;
+	}
+
+
+	section.premium-main-section {
+		height: 1050px;
+	}
+
+	section.premium-main-section .title-text {
+		width: 300px;
+		padding-top: 33px;
+		font-size: 18px;
+	}
+
+	section.premium-main-section .main-content {
+		width: 300px;
+		padding-top: 20px;
+	}
+
+	section.premium-main-section .main-content .card{
+		width: 238px;
+		height: 380px;
+		border-radius: 33px;
+	}
+	section.premium-main-section .main-content .card .title-card-block {
+		width: 238px;
+		height: 70px;
+		border-radius: 33px;
+		font-size: 18px;
+	}
+
+	section.premium-main-section .main-content .card ul {
+		width: 178px;
+	}
+
+	section.premium-main-section .main-content .card  ul li{
+		margin: 10px 0;
+	}
+
+	section.premium-main-section .main-content .card ul li div{
+		padding-left: 10px;
+		font-size: 12px;
+	}
+
+	section.premium-main-section .main-content .card ul li img{
+		width: 15px;
+	}
+
+	section.premium-main-section .main-content .card .price-per-month{
+		font-weight: 500;
+		font-size: 12px;
+	}
+
+	section.premium-main-section .main-content .card form button.btn-for-buy {
+		width: 174px;
+		height: 42px;
+		margin-top: 3px;
+		box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+		font-size: 12px;
+		margin-bottom: 10px;
+	}
+
+	section.premium-main-section .main-content .card form button.btn-for-buy:hover{
+		transform: scale(1.02);
+	}
+
+	section.premium-main-section .main-content .first .price-per-month{
+		margin-top: 99px;
+	}
+
+	section.premium-main-section .main-content .second .price-per-month{
+		margin-top: 34px;
+	}
+
+	section.premium-main-section .main-content .second .special-benefits ul li{
+		margin: 10px 0;
+	}
+
+	section.premium-main-section .additional-info {
+		width: 250px;
+		margin-top: 14px;
+	}
+
+	section.premium-main-section .additional-info .text-addition {
+		width: 225px;
+	}
+	section.premium-main-section .additional-info .text-addition .the-text {
+		width: 200px;
+		font-size: 9px;
+	}
+
+	
+	footer{
+		height: 300px;
+	}
+	.footer-main-content{
+		padding-top: 0;
+		font-size: 9px;
+		height: 300px;
+	}
+
+	.footer-main-content .social-network-info {
+		width: 265px;
+	}
+
+	.footer-main-content .social-network-info .call-to-action{
+		width: 265px;
+	}
+
+	.call-to-action, .header-options{
+		font-size: 15px;
+		padding-bottom: 11.5px;
+	}
+	.footer-main-content .social-network-info .social-networks img{
+		width: 30px;
+		padding-left: 27px;
+		padding-top: 2.5px;
+	}
+	.footer-main-content .social-network-info .social-networks img:hover{
+		transform: translate(0, -7px);
+	}
+
+	.footer-main-content .social-network-info > a{
+		padding-left: 33px;
+	}
+	.footer-main-content .social-network-info > a:hover{
+		transform: translate(0, 3px);
+	}
+	.footer-main-content .social-network-info > a img{
+		width: 200px;
+	}
+
+	.footer-main-content .account-options{
+		padding-left: 35px;
+
+	}
+	.footer-main-content .book-options{
+		padding-left: 0;
+	}
+
+	.footer-main-content div.option {
+		width: 118px;
+		padding-top: 4.25px;
+		padding-bottom: 4.25px;
+	}
+}
